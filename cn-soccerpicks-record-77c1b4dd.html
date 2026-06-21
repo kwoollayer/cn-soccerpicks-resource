@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞猜足球 · 站点介绍与知识库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            padding: 2.8rem 2rem;
+        }
+
+        @media (max-width: 480px) {
+            .page {
+                padding: 1.8rem 1.2rem;
+                border-radius: 14px;
+            }
+        }
+
+        /* 标题层级 */
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #0b1a2e;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #5b6f87;
+            border-bottom: 2px solid #eef1f5;
+            padding-bottom: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a2d44;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c405b;
+            margin-top: 1.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        a {
+            color: #1a5c9e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: #0a3b6b;
+        }
+
+        /* 卡片 / 区块 */
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+
+        .card {
+            background: #f6f8fb;
+            border-radius: 14px;
+            padding: 1.2rem 1.4rem;
+            border-left: 4px solid #b6c8db;
+            transition: background 0.2s;
+        }
+
+        .card:hover {
+            background: #f0f3f8;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+            color: #152b42;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #2e425c;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dee5ee;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            color: #1d3557;
+            font-weight: 500;
+            margin-right: 0.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e6eaef;
+            padding: 0.8rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #1f3a57;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-a {
+            font-size: 0.95rem;
+            color: #3c506b;
+        }
+
+        .info-box {
+            background: #f4f7fb;
+            border-radius: 12px;
+            padding: 1rem 1.3rem;
+            margin: 1.8rem 0;
+            border: 1px solid #dce3ec;
+        }
+
+        .info-box p {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dfe5ed;
+            font-size: 0.85rem;
+            color: #5b6f84;
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e6ecf2;
+            margin: 1.8rem 0;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .badge-list span {
+            background: #e9eef4;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #1a2f4a;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <h1>关于竞猜足球 · 知识库</h1>
+    <div class="subhead">站点介绍 · 可信说明 · 实用信息</div>
+
+    <p>
+        <a href="https://cn-soccerpicks.com">竞猜足球</a> 是一个以足球赛事信息为基础的内容站点，围绕比赛数据、球队动态、赛前情报等方面，为对足球竞猜感兴趣的朋友提供参考信息。站点的定位是信息整理与知识沉淀，不涉及任何实际投注或金钱交易，内容仅供个人学习与交流使用。
+    </p>
+
+    <!-- 介绍区 + 可信说明 -->
+    <h2>站点背景与可信说明</h2>
+    <p>
+        很多人喜欢在周末看球时，顺便了解一下各队的近期状态、伤停情况、对战记录，<a href="https://cn-soccerpicks.com">竞猜足球</a>就是在这样的需求下诞生的。站内内容由编辑团队整理自公开体育数据与赛事报道，尽力保证时效性与准确性，但不作绝对承诺。足球世界充满变数，这也是它的魅力所在。
+    </p>
+
+    <!-- 知识卡片式布局 目录感 -->
+    <h2>知识库入口 · 内容分类</h2>
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-title">📋 赛前数据速览</div>
+            <p>交战记录、近五场走势、进球分布、红黄牌统计。</p>
+            <div class="badge-list">
+                <span>英超</span><span>西甲</span><span>意甲</span><span>德甲</span><span>欧冠</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">🏥 伤停与阵容</div>
+            <p>关键球员缺阵影响、预计首发、轮换幅度。</p>
+            <div class="badge-list">
+                <span>伤情追踪</span><span>停赛提醒</span><span>国家队征召</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">🌤 场外因素</div>
+            <p>天气、主客场氛围、裁判尺度、一周双赛疲劳度。</p>
+            <div class="badge-list">
+                <span>裁判数据</span><span>天气影响</span><span>旅途距离</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 提示区 -->
+    <h2>使用提示</h2>
+    <div class="info-box">
+        <p>⚡ <strong>理性参考</strong> —— 所有内容均为信息整理，不代表任何预测结果。</p>
+        <p>📅 <strong>更新节奏</strong> —— 通常在赛前 24–48 小时更新核心数据，建议临近比赛时再次确认。</p>
+        <p>🔍 <strong>交叉验证</strong> —— 可结合官方首发名单、教练发布会信息综合判断。</p>
+    </div>
+
+    <!-- 场景 / 适用人群 -->
+    <h2>适合什么场景？</h2>
+    <p>
+        无论是周末想和朋友聊聊球，还是独自研究比赛走向，<a href="https://cn-soccerpicks.com">竞猜足球</a> 都能提供一个轻量的信息起点。对于刚开始接触足球竞猜的新手，这里的基础数据模块也能帮你快速建立查阅习惯，而不必面对海量信息无从下手。
+    </p>
+    <p>
+        如果你是资深球迷，可以用站内的对比数据来验证自己的判断。同一场比赛，不同维度的信息常常会带来新的观察角度。
+    </p>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见问题（FAQ）</h2>
+    <div class="faq-item">
+        <div class="faq-q">❓ 站内数据来自哪里？</div>
+        <div class="faq-a">主要来自公开赛事统计平台、联赛官方数据以及权威体育媒体，编辑团队会进行二次核对与整理。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">❓ 是否需要注册或付费？</div>
+        <div class="faq-a">完全免费，无须注册即可浏览所有公开内容。站内没有隐藏收费模块。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">❓ 内容更新频率如何？</div>
+        <div class="faq-a">主流联赛（英超、西甲、意甲、德甲、法甲、欧冠）每轮赛前均有更新，部分杯赛视关注度而定。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">❓ 可以直接复制内容吗？</div>
+        <div class="faq-a">站内文本欢迎个人引用，但请注明来源。商业用途或大规模转载前建议联系站点沟通。</div>
+    </div>
+
+    <!-- 相关信息区 -->
+    <hr>
+    <h2>相关信息</h2>
+    <p>
+        <a href="https://cn-soccerpicks.com">竞猜足球</a> 保持内容公开、透明，不会以任何形式引导用户进行实际金钱投注。如果你对某支球队的战术或转会动态感兴趣，站内的“球队观察”板块也能提供一些背景阅读（即将上线）。此外，我们也在逐步添加竞猜方式的科普短文，帮助理解不同游戏规则背后的逻辑。
+    </p>
+    <p>
+        足球是圆的，每一场比赛都值得认真对待，但不必过度紧张。<a href="https://cn-soccerpicks.com">竞猜足球</a> 希望能成为你看球之余的一个安静角落，这里有数据，有观点，但更多的还是对这项运动本身的尊重。
+    </p>
+
+    <div class="footer-note">
+        © 竞猜足球 · 知识库 · 非博彩站点 · 仅供学习参考
+    </div>
+
+</div>
+</body>
+</html>
