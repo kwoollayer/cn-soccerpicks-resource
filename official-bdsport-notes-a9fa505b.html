@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>半岛体育 – 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fbfbfc;
+      color: #1e2a3a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* 顶部导航 */
+    .top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.125rem 0;
+      border-bottom: 1px solid #e4e9f0;
+    }
+
+    .top-nav .brand {
+      font-size: 1.2rem;
+      font-weight: 550;
+      letter-spacing: 0.02em;
+      color: #1e2a3a;
+    }
+
+    .top-nav .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.95rem;
+    }
+
+    .top-nav .nav-links a {
+      text-decoration: none;
+      color: #4d5b6b;
+      transition: color 0.15s;
+    }
+
+    .top-nav .nav-links a:hover {
+      color: #0f1b2b;
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 550;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-top: 2.8rem;
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid #eaeef4;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p, li, .desc-text {
+      color: #2c3a4b;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(29, 78, 216, 0.2);
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #1d4ed8;
+    }
+
+    /* 场景卡片 */
+    .scene-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1.8rem 0 0.5rem;
+    }
+
+    .scene-card {
+      background: #ffffff;
+      border: 1px solid #e4e9f0;
+      border-radius: 12px;
+      padding: 1.5rem 1.6rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .scene-card:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    .scene-card .card-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #6d7c8e;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .scene-card p {
+      margin-bottom: 0;
+    }
+
+    /* 说明区块 */
+    .note-box {
+      background: #f5f7fa;
+      border-left: 3px solid #d0d8e3;
+      border-radius: 0 8px 8px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 2.2rem 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    .note-box p {
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-summary {
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e4e9f0;
+    }
+
+    .faq-summary dt {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      margin-top: 1.2rem;
+    }
+
+    .faq-summary dd {
+      margin-left: 0;
+      color: #4d5b6b;
+      margin-bottom: 0.6rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      .page {
+        padding: 1.8rem 1rem 3rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .top-nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .top-nav .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 顶部导航 -->
+  <nav class="top-nav">
+    <span class="brand">BDSport</span>
+    <ul class="nav-links">
+      <li><a href="#intro">介绍</a></li>
+      <li><a href="#scenes">场景</a></li>
+      <li><a href="#faq">说明</a></li>
+    </ul>
+  </nav>
+
+  <!-- 核心介绍 -->
+  <section id="intro">
+    <h1>稳定入口与页面说明</h1>
+    <p>
+      对于日常使用来说，一个清晰、稳定的访问路径至关重要。无论是通过桌面浏览器还是移动设备，<a href="https://official-bdsport.com">半岛体育</a>始终提供统一的界面与连贯的操作流程。以下内容从使用者视角梳理平台的定位与典型场景，并对常见疑问作出简要解释。
+    </p>
+    <p>
+      平台结构围绕信息透明与操作效率设计，减少不必要的跳转层级。用户可借助统一的入口快速到达核心功能模块，同时保持对页面内容的全面感知。
+    </p>
+  </section>
+
+  <!-- 三个场景模块 -->
+  <h2 id="scenes">典型使用场景</h2>
+  <div class="scene-grid">
+
+    <div class="scene-card">
+      <span class="card-label">场景一 · 快速查阅</span>
+      <p>
+        通过统一的导航栏直达感兴趣的分类板块。页面列表采用扁平结构，标题与摘要并行呈现，方便在有限时间内筛选信息。无需反复返回首页即可切换内容领域。
+      </p>
+    </div>
+
+    <div class="scene-card">
+      <span class="card-label">场景二 · 信息对比</span>
+      <p>
+        在多个内容条目之间切换时，页面保持一致的视觉布局与数据维度。横向对比参数、状态或说明文字时，用户只需要关注内容本身，无需适应频繁变化的界面样式。
+      </p>
+    </div>
+
+    <div class="scene-card">
+      <span class="card-label">场景三 · 长页面浏览</span>
+      <p>
+        对于篇幅较长的介绍或列表，页面采用恰当的间距与标题层级划分章节。锚点导航与视口内联提示协助定位，减少滚动迷失。所有交互元素均保留明确的反馈状态。
+      </p>
+    </div>
+
+  </div>
+
+  <!-- 常见说明 (FAQ 摘要) -->
+  <div class="faq-summary" id="faq">
+    <h2>常见说明</h2>
+    <dl>
+      <dt>如何获取最新的版块更新？</dt>
+      <dd>直接访问 <a href="https://official-bdsport.com">半岛体育</a> 即可看到当前所有公开板块。首页展示最近更新的条目摘要，分类页面按时间倒序排列。</dd>
+
+      <dt>页面在移动设备上的适配情况如何？</dt>
+      <dd>基于响应式布局，正文区域在手机屏幕上自动调整宽度与字号，导航元素折叠为紧凑模式。所有交互目标均保留足够触控面积。</dd>
+
+      <dt>是否提供搜索或筛选功能？</dt>
+      <dd>当前页面以信息浏览为主，搜索功能通过平台统一的检索入口提供。后续可根据使用反馈增加更精细的筛选组件。</dd>
+
+      <dt>链接稳定性与外部跳转</dt>
+      <dd>本站所有链接均指向确定的资源地址。核心入口保持长期有效，如果遇到临时不可用情况，建议稍后重试或检查本地网络设置。</dd>
+    </dl>
+  </div>
+
+  <!-- 附加说明 -->
+  <div class="note-box">
+    <p><strong>使用提示</strong>：建议将 <a href="https://official-bdsport.com">半岛体育</a> 添加至浏览器书签或主屏幕，以便快速返回。页面内容定期刷新，具体更新时间见各板块脚注。</p>
+    <p style="margin-top:0.6rem; color:#6d7c8e;">本页面仅作功能与结构说明，不构成任何形式的担保或承诺。</p>
+  </div>
+
+</div>
+</body>
+</html>
